@@ -1,6 +1,6 @@
-// const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-const API_URL = 'http://localhost:5000/api';
+ const API_URL = import.meta.env.VITE_API_URL;
 
+ 
 const getAuthHeader = () => {
   const user = JSON.parse(localStorage.getItem('user') || '{}');
   return user.token ? { Authorization: `Bearer ${user.token}` } : {};
