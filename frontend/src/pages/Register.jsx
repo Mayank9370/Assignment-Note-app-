@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { validateEmail, validatePassword, validateName, validateRequired } from '../utils/validation';
+import { validateEmail, validatePassword, validateName, validateRequired } from '../utils/validation.js';
 
 import { UserPlus } from 'lucide-react';
 
